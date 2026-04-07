@@ -2,23 +2,23 @@
 title: "ADeLe: Predicting and explaining AI performance across tasks"
 source_url: "https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/"
 source_type: "blog"
-published_at: "2026-04-01"
-processed_at: "2026-04-06"
-confidence: "medium"
-tags: ["ai", "research", "engineering", "benchmark", "eval"]
+published_at: "2026-04-07"
+processed_at: "2026-04-07"
+confidence: "high"
+tags: ["ai", "research", "engineering"]
 ---
 # 要約（3行)
-- ADeLe: Predicting and explaining AI performance across tasks は Microsoft Research Blog (manual seed) から公開された技術文書です。
+- ADeLe: Predicting and explaining AI performance across tasks は Microsoft Research Blog から公開された技術文書です。
 - 主題は ai / research / engineering で、実務への応用余地があります。
 - 一次情報として https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/ を参照しつつ、詳細確認が必要な点は原文で補う前提です。
 
 ## 1. 何が新しいか
-- Microsoft Research Blog (manual seed) 発の内容で、ai / research / engineering を扱っています。
-- 関連タグ: ai, research, engineering, benchmark, eval。
+- Microsoft Research Blog 発の内容で、ai / research / engineering を扱っています。
+- 関連タグ: ai, research, engineering。
 
 ## 2. 技術ポイント（エンジニア向け）
-- 要旨: ADeLe evaluates both tasks and models across 18 core abilities, builds comparable ability profiles, and predicts performance on unseen tasks with about 88% accuracy for models including GPT-4o and Llama-3.1. The framework is useful for understanding benchmark coverage, task difficulty, and model failure modes across reasoning and domain-knowledge-heavy evaluations.
-- 関連性スコアは 0.71 で、判定理由は manual seed from Microsoft Research Blog via tool fetch; priority keywords=reasoning, eval, benchmark。
+- 要旨: ADeLe evaluates models and tasks on a shared set of 18 core abilities, allowing performance on unseen tasks to be predicted with about 88% accuracy. The work reframes benchmark evaluation around explicit capability profiles and task demands instead of isolated aggregate benchmark scores.
+- 関連性スコアは 0.87 で、判定理由は manual web-fetched seed from Microsoft Research Blog; useful but slightly less directly operational than the agent-focused items。
 
 ## 3. 実装・運用への示唆
 - 自社プロダクトへ取り込む前に、API制約・コスト・安全性を比較検証する。

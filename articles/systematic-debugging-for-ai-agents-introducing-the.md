@@ -2,8 +2,8 @@
 title: "Systematic debugging for AI agents: Introducing the AgentRx framework"
 source_url: "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/"
 source_type: "blog"
-published_at: "2026-04-07"
-processed_at: "2026-04-07"
+published_at: "2026-04-08"
+processed_at: "2026-04-08"
 confidence: "high"
 tags: ["ai", "research", "engineering"]
 ---
@@ -17,8 +17,8 @@ tags: ["ai", "research", "engineering"]
 - 関連タグ: ai, research, engineering。
 
 ## 2. 技術ポイント（エンジニア向け）
-- 要旨: Microsoft Research introduces AgentRx, a framework for diagnosing long-horizon agent failures by synthesizing guarded executable constraints from tool schemas and policy, then localizing the first unrecoverable failure step. The release includes a 115-trajectory benchmark and a grounded failure taxonomy for agent debugging and evaluation.
-- 関連性スコアは 0.93 で、判定理由は manual web-fetched seed from Microsoft Research Blog; high relevance to agent debugging and evaluation。
+- 要旨: Microsoft introduces AgentRx, an open framework and benchmark for diagnosing long-horizon agent failures. It synthesizes executable constraints from tool schemas and policy, checks trajectories step by step, and uses evidence-backed logs plus an LLM judge to localize the first unrecoverable failure and root cause.
+- 関連性スコアは 0.93 で、判定理由は manual seed from Microsoft Research Blog; highly relevant agent debugging infrastructure。
 
 ## 3. 実装・運用への示唆
 - 自社プロダクトへ取り込む前に、API制約・コスト・安全性を比較検証する。

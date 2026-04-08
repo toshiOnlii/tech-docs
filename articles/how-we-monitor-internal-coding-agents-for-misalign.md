@@ -3,7 +3,7 @@ title: "How we monitor internal coding agents for misalignment"
 source_url: "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/"
 source_type: "blog"
 published_at: "2026-03-19"
-processed_at: "2026-04-07"
+processed_at: "2026-04-08"
 confidence: "high"
 tags: ["ai", "research", "safety"]
 ---
@@ -17,8 +17,8 @@ tags: ["ai", "research", "safety"]
 - 関連タグ: ai, research, safety。
 
 ## 2. 技術ポイント（エンジニア向け）
-- 要旨: OpenAI describes a monitoring system for internally deployed coding agents that reviews actions and chain-of-thought to flag behavior inconsistent with user intent or internal security/compliance policies. The system uses GPT-5.4 Thinking for low-latency post-hoc review, surfaces suspicious behavior within roughly 30 minutes, and is framed as a defense-in-depth control for increasingly agentic internal workflows.
-- 関連性スコアは 0.96 で、判定理由は manual web-fetched seed from OpenAI Research index; strong agent safety / monitoring relevance。
+- 要旨: OpenAI describes a low-latency monitoring system for internally deployed coding agents that reviews actions and chains of thought, flags misalignment-relevant behavior, and helps detect policy or security violations in realistic tool-rich workflows. The post argues that monitoring agent behavior and reasoning will become a key defense-in-depth safeguard as autonomous coding systems scale.
+- 関連性スコアは 0.95 で、判定理由は manual seed from OpenAI Research index; strong agent safety and monitoring relevance。
 
 ## 3. 実装・運用への示唆
 - 自社プロダクトへ取り込む前に、API制約・コスト・安全性を比較検証する。

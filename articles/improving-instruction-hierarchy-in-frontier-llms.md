@@ -3,7 +3,7 @@ title: "Improving instruction hierarchy in frontier LLMs"
 source_url: "https://openai.com/index/instruction-hierarchy-challenge/"
 source_type: "blog"
 published_at: "2026-03-10"
-processed_at: "2026-04-07"
+processed_at: "2026-04-08"
 confidence: "high"
 tags: ["ai", "research", "safety"]
 ---
@@ -17,8 +17,8 @@ tags: ["ai", "research", "safety"]
 - 関連タグ: ai, research, safety。
 
 ## 2. 技術ポイント（エンジニア向け）
-- 要旨: OpenAI presents IH-Challenge, a reinforcement-learning training dataset for instruction-hierarchy behavior. The work targets a core safety problem: making models reliably prioritize trusted instructions across system, developer, user, and tool sources, improving safety steerability and resistance to prompt injection.
-- 関連性スコアは 0.94 で、判定理由は manual web-fetched seed from OpenAI Research index; directly relevant to prompt injection and model control。
+- 要旨: OpenAI shows that training models on instruction-hierarchy tasks improves their ability to prioritize trusted instructions over conflicting lower-priority ones. The work ties hierarchy training to better safety steerability and stronger resistance to prompt injection in tool outputs.
+- 関連性スコアは 0.89 で、判定理由は manual seed from OpenAI Research index; prompt-injection and instruction-priority research。
 
 ## 3. 実装・運用への示唆
 - 自社プロダクトへ取り込む前に、API制約・コスト・安全性を比較検証する。

@@ -3,7 +3,7 @@ title: "PlugMem: Transforming raw agent interactions into reusable knowledge"
 source_url: "https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/"
 source_type: "blog"
 published_at: "2026-03-10"
-processed_at: "2026-04-07"
+processed_at: "2026-04-08"
 confidence: "high"
 tags: ["ai", "research", "engineering"]
 ---
@@ -17,8 +17,8 @@ tags: ["ai", "research", "engineering"]
 - 関連タグ: ai, research, engineering。
 
 ## 2. 技術ポイント（エンジニア向け）
-- 要旨: Microsoft Research presents PlugMem, a task-agnostic memory module that converts raw interaction histories into structured reusable knowledge units such as facts and skills. The design aims to improve agent performance across dialogue, retrieval, and web browsing tasks while reducing memory-token overhead.
-- 関連性スコアは 0.91 で、判定理由は manual web-fetched seed from Microsoft Research Blog; directly relevant to agent memory systems。
+- 要旨: PlugMem reframes agent memory from raw transcript retrieval into a structured knowledge layer built from reusable facts and skills. Microsoft reports better cross-benchmark agent performance with fewer memory tokens by storing and retrieving compact task-relevant knowledge units instead of long interaction logs.
+- 関連性スコアは 0.91 で、判定理由は manual seed from Microsoft Research Blog; direct relevance to agent memory architecture。
 
 ## 3. 実装・運用への示唆
 - 自社プロダクトへ取り込む前に、API制約・コスト・安全性を比較検証する。

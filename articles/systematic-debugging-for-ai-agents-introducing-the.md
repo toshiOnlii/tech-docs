@@ -2,23 +2,23 @@
 title: "Systematic debugging for AI agents: Introducing the AgentRx framework"
 source_url: "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/"
 source_type: "blog"
-published_at: "2026-04-08"
-processed_at: "2026-04-08"
-confidence: "high"
-tags: ["ai", "research", "engineering"]
+published_at: "2026-03-12"
+processed_at: "2026-04-09"
+confidence: "medium"
+tags: ["manual-seed"]
 ---
 # 要約（3行)
 - Systematic debugging for AI agents: Introducing the AgentRx framework は Microsoft Research Blog から公開された技術文書です。
-- 主題は ai / research / engineering で、実務への応用余地があります。
+- 主題は manual-seed で、実務への応用余地があります。
 - 一次情報として https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/ を参照しつつ、詳細確認が必要な点は原文で補う前提です。
 
 ## 1. 何が新しいか
-- Microsoft Research Blog 発の内容で、ai / research / engineering を扱っています。
-- 関連タグ: ai, research, engineering。
+- Microsoft Research Blog 発の内容で、manual-seed を扱っています。
+- 関連タグ: manual-seed。
 
 ## 2. 技術ポイント（エンジニア向け）
-- 要旨: Microsoft introduces AgentRx, an open framework and benchmark for diagnosing long-horizon agent failures. It synthesizes executable constraints from tool schemas and policy, checks trajectories step by step, and uses evidence-backed logs plus an LLM judge to localize the first unrecoverable failure and root cause.
-- 関連性スコアは 0.93 で、判定理由は manual seed from Microsoft Research Blog; highly relevant agent debugging infrastructure。
+- 要旨: Microsoft introduces AgentRx, an open-source framework and benchmark for diagnosing AI agent failures by synthesizing guarded constraints from tool schemas and policies, localizing critical failure steps, and improving root-cause attribution.
+- 関連性スコアは 0.71 で、判定理由は priority keywords=agent, benchmark; microsoft keyword hits=agent,benchmark,debugging。
 
 ## 3. 実装・運用への示唆
 - 自社プロダクトへ取り込む前に、API制約・コスト・安全性を比較検証する。
@@ -33,7 +33,7 @@ tags: ["ai", "research", "engineering"]
 - MLOps・Platform・Security 観点で導入影響を見たい技術責任者。
 
 ## 6. 5分で話せる説明
-- この文書は ai / research / engineering を短時間で把握したいエンジニア向けの一次情報です。
+- この文書は manual-seed を短時間で把握したいエンジニア向けの一次情報です。
 - 何が新しいのか、どこに使えるのか、どんな制約があるか、の3点を押さえると会話しやすいです。
 
 ## 7. 私の視点

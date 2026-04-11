@@ -3,22 +3,22 @@ title: "How we monitor internal coding agents for misalignment"
 source_url: "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/"
 source_type: "blog"
 published_at: "2026-03-19"
-processed_at: "2026-04-09"
-confidence: "low"
-tags: ["manual-seed"]
+processed_at: "2026-04-08"
+confidence: "high"
+tags: ["ai", "research", "safety"]
 ---
 # 要約（3行)
 - How we monitor internal coding agents for misalignment は OpenAI Research Index から公開された技術文書です。
-- 主題は manual-seed で、実務への応用余地があります。
+- 主題は ai / research / safety で、実務への応用余地があります。
 - 一次情報として https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/ を参照しつつ、詳細確認が必要な点は原文で補う前提です。
 
 ## 1. 何が新しいか
-- OpenAI Research Index 発の内容で、manual-seed を扱っています。
-- 関連タグ: manual-seed。
+- OpenAI Research Index 発の内容で、ai / research / safety を扱っています。
+- 関連タグ: ai, research, safety。
 
 ## 2. 技術ポイント（エンジニア向け）
-- 要旨: OpenAI describes a low-latency monitoring stack for internal coding agents using chain-of-thought and action review to detect misalignment, policy violations, and suspicious agent behavior across real-world tool-rich deployments.
-- 関連性スコアは 0.47 で、判定理由は priority keywords=agent。
+- 要旨: OpenAI describes a low-latency monitoring system for internally deployed coding agents that reviews actions and chains of thought, flags misalignment-relevant behavior, and helps detect policy or security violations in realistic tool-rich workflows. The post argues that monitoring agent behavior and reasoning will become a key defense-in-depth safeguard as autonomous coding systems scale.
+- 関連性スコアは 0.95 で、判定理由は manual seed from OpenAI Research index; strong agent safety and monitoring relevance。
 
 ## 3. 実装・運用への示唆
 - 自社プロダクトへ取り込む前に、API制約・コスト・安全性を比較検証する。
@@ -33,7 +33,7 @@ tags: ["manual-seed"]
 - MLOps・Platform・Security 観点で導入影響を見たい技術責任者。
 
 ## 6. 5分で話せる説明
-- この文書は manual-seed を短時間で把握したいエンジニア向けの一次情報です。
+- この文書は ai / research / safety を短時間で把握したいエンジニア向けの一次情報です。
 - 何が新しいのか、どこに使えるのか、どんな制約があるか、の3点を押さえると会話しやすいです。
 
 ## 7. 私の視点

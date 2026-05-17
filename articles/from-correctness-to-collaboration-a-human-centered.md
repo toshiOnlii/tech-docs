@@ -2,52 +2,79 @@
 title: "From Correctness to Collaboration: A Human-Centered Taxonomy of AI Age"
 source_url: "https://research.google/pubs/from-correctness-to-collaboration-a-human-centered-taxonomy-of-ai-agent-behavior-in-software-engineering/"
 source_type: "publication"
-published_at: "2026-04-08"
-processed_at: "2026-04-08"
-confidence: "low"
+published_at: "2026-05-17"
+processed_at: "2026-05-17"
+confidence: "medium"
 tags: ["research", "ml", "publication"]
 ---
 # 要約（3行)
-- From Correctness to Collaboration: A Human-Centered Taxonomy of AI Agent Behavior in Software Engineering は Google Research Publications から公開された技術文書です。
-- 主題は research / ml / publication で、実務への応用余地があります。
-- 一次情報として https://research.google/pubs/from-correctness-to-collaboration-a-human-centered-taxonomy-of-ai-agent-behavior-in-software-engineering/ を参照しつつ、詳細確認が必要な点は原文で補う前提です。
+- Google Researchが、ソフトウェア開発におけるAIエージェントの望ましい行動を整理したタクソノミーを提示した（CHI EA ’26）。
+- 91件のユーザー定義ルールを分析し、「標準順守」「品質確保」「問題解決」「ユーザー協働」の4領域に集約している。
+- コード正解率中心の評価から、企業開発に適した協働行動ベースの評価へ移行する必要性を示す。
 
 ## 1. 何が新しいか
-- Google Research Publications 発の内容で、research / ml / publication を扱っています。
-- 関連タグ: research, ml, publication。
+- コードの正確性ではなく「協働行動」を評価軸に据えた点
+- 実ユーザーが定義した91セットのルールからボトムアップで分類を構築した点
+- エンタープライズ開発における暗黙的な期待を明示的な語彙として整理した点
+- LLMを単なるコード生成器ではなく「自律エージェント」として扱う前提への転換
+- 評価指標設計に直結する形で行動カテゴリを提示している点
 
 ## 2. 技術ポイント（エンジニア向け）
-- 要旨: From Correctness to Collaboration: A Human-Centered Taxonomy of AI Agent Behavior in Software Engineering Tao Dong Sherry Shi Harini Sampath Andrew Macvean Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA ’26), ACM, New York, NY, USA (2026) Google Scholar Copy Bibtex Abstract The ongoing transition of Large Language Models in software engineering from code generators into autonomous agents requires a shift in how we define and measure success. While mo…
-- 関連性スコアは 0.62 で、判定理由は priority keywords=agent; google keyword hits=agent。
+- 対象論文はCHI EA ’26（Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems）に掲載
+- 分析データは91件のユーザー定義ルール（coding agents向けガイドライン）
+- 4つのコア期待: Adhere to Standards and Processes（標準・プロセス順守）
+- Ensure Code Quality and Reliability（コード品質と信頼性の確保）
+- Solve Problems Effectively（効果的な問題解決）
+- Collaborate with the User（ユーザーとの協働）
+- 従来のベンチマーク（正解率・単体タスク成功率）では測れない行動特性を対象とする
+- 人間中心設計（HCI）の観点からエージェント行動を整理
+- エンタープライズ環境での実務的期待（プロセス遵守や対話性）を評価軸に含めている
 
 ## 3. 実装・運用への示唆
-- 自社プロダクトへ取り込む前に、API制約・コスト・安全性を比較検証する。
-- PoCでは小さな評価データセットを作り、再現性と運用負荷を先に見る。
+- 社内AIコーディングエージェントの評価基準を、単体タスク成功率からレビュー対応やプロセス順守へ拡張する必要がある
+- CI/CDやコードレビュー文化に適合するよう、エージェントに明示的な行動ルール（例: スタイルガイド遵守）を組み込む設計が求められる
+- ユーザーとのインタラクション（説明、確認、修正提案）をログとして収集し、品質評価に組み込む設計が重要になる
+- 単発のコード生成ではなく、複数ステップの問題解決プロセス（調査→提案→修正）を評価対象に含める必要がある
+- エンタープライズ導入では「正しいコードを書く」よりも「安全にチームに統合される行動」を優先する設計判断が必要になる
 
 ## 4. 注意点・限界
-- この記事は自動要約ベースの下書きなので、数値や固有名詞は原文で再確認する。
-- マーケティング色の強い記事では、技術的新規性が低い可能性がある。
+- Extended Abstractであり、詳細な実験設定や定量評価は本文からは確認できない
+- 91件のルールの収集方法や偏り（業種・企業規模など）は不明で、一般化には注意が必要
+- 4分類がどの程度網羅的か、他の分類体系との比較検証は示されていない
+- 実際のエージェント性能向上への寄与は直接的には検証されていない可能性がある
+- 「協働」の定義や評価指標の具体的な測定方法は不確実
 
 ## 5. こんなチームに有効
-- 生成AI機能をプロダクトへ組み込みたいアプリケーション開発チーム。
-- MLOps・Platform・Security 観点で導入影響を見たい技術責任者。
+- 開発者向けAIエージェントやCopilot製品の設計チーム
+- エンタープライズ開発の開発基盤・DevEx（Developer Experience）担当
+- AI評価基盤・ベンチマーク設計を担うMLエンジニア／研究者
 
 ## 6. 5分で話せる説明
-- この文書は research / ml / publication を短時間で把握したいエンジニア向けの一次情報です。
-- 何が新しいのか、どこに使えるのか、どんな制約があるか、の3点を押さえると会話しやすいです。
+- この研究は、AIコーディングツールを『コード生成器』ではなく『チームの一員』として扱うべきだという問題意識から出発している。
+- 従来は正しいコードを出すかどうかで評価していたが、実際の開発ではプロセス順守やレビュー対応などが重要になる。
+- そこで著者らは、ユーザーが実際に定義した91のルールを分析し、望ましい行動を4つのカテゴリに整理した。
+- その4つは、標準順守、品質確保、問題解決力、そしてユーザーとの協働である。
+- この整理により、今後は『どれだけ正確か』ではなく『どれだけチーム開発に適応できるか』を評価する方向に進むべきだと示している。
 
 ## 7. 私の視点
-- 私の視点では、この下書きは速報としては有効だが、実験条件や評価設計の詳細確認が前提になる。
-- 主張の強さよりも、実際にどの条件で成立したかを先に読むべきタイプの文書。
+- 実務的には、特に「プロセス順守」と「協働」は従来のLLM評価で抜け落ちていた重要領域であり、現場感に近い整理だと感じる。
+- 一方で、この4分類はやや抽象度が高く、そのままでは評価指標に落とし込みにくい印象もある。
+- 今後は各カテゴリを具体的なメトリクス（例: レビュー修正回数、確認質問の適切さ）に分解できるかが鍵になる。
+- 企業ごとの文化差（厳格なプロセス vs スピード重視）によって重み付けが変わるため、標準化は簡単ではないと思われる。
 
 ## 8. どこまで鵜呑みにしてよいか
-- 要点の方向性は参考になるが、数値・比較・ベースラインは原文確認が必要。
-- 公開記事の要約なので、研究論文ほど再現性情報が揃っていない可能性がある。
+- Google ResearchおよびCHI EA ’26という信頼性の高い出所ではある
+- ただしExtended Abstractのため、詳細な検証や再現性の情報は限定的
+- データセット（91ルール）の収集方法と代表性は要確認
+- 提案は概念整理寄りであり、性能改善の実証とは別レイヤー
+- 実運用への適用には追加の実験・評価設計が必要
 
 ## 9. 関連して見るとよい論点
-- 評価方法がオンライン環境かオフライン環境か。
-- 人手介入の有無、ツール権限制御、失敗モードの設計。
-- 既存手法や他社事例と比較したときの差分。
+- 従来のコード生成ベンチマーク（HumanEvalなど）との評価軸の違い
+- AIエージェントの行動評価におけるHCI（Human-Computer Interaction）の役割
+- GitHub CopilotやDevinのような実用エージェントとの比較
+- ソフトウェア品質指標（ISO/IEC 25010など）との対応関係
+- マルチエージェント開発環境における協働プロトコル設計
 
 ## 原文リンク
 - https://research.google/pubs/from-correctness-to-collaboration-a-human-centered-taxonomy-of-ai-agent-behavior-in-software-engineering/
